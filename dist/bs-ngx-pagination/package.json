@@ -1,0 +1,24 @@
+{
+  "name": "bs-ngx-pagination",
+  "version": "0.0.1-a",
+  "peerDependencies": {
+    "@angular/common": "^7.0.0",
+    "@angular/core": "^7.0.0"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.1.3"
+  },
+  "main": "bundles/bs-ngx-pagination.umd.js",
+  "module": "fesm5/bs-ngx-pagination.js",
+  "es2015": "fesm2015/bs-ngx-pagination.js",
+  "esm5": "esm5/bs-ngx-pagination.js",
+  "esm2015": "esm2015/bs-ngx-pagination.js",
+  "fesm5": "fesm5/bs-ngx-pagination.js",
+  "fesm2015": "fesm2015/bs-ngx-pagination.js",
+  "typings": "bs-ngx-pagination.d.ts",
+  "metadata": "bs-ngx-pagination.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
