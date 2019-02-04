@@ -13,8 +13,8 @@
   <li class="page-item disabled" *ngIf="data.current_page>7"><a class="page-link" href="#">...</a></li>
 
   <li class="page-item" *ngIf="data.current_page>5"><a class="page-link" href="#" (click)="pageChanged(data.current_page-3);$event.preventDefault();">{{ data.current_page-3 }}</a></li>
-  <li class="page-item" *ngIf="data.current_page>4"><a class="page-link" href="#" (click)="pageChanged(data.current_page-3);$event.preventDefault();">{{ data.current_page-2 }}</a></li>
-  <li class="page-item" *ngIf="data.current_page>3"><a class="page-link" href="#" (click)="pageChanged(data.current_page-3);$event.preventDefault();">{{ data.current_page-1 }}</a></li>
+  <li class="page-item" *ngIf="data.current_page>4"><a class="page-link" href="#" (click)="pageChanged(data.current_page-2);$event.preventDefault();">{{ data.current_page-2 }}</a></li>
+  <li class="page-item" *ngIf="data.current_page>3"><a class="page-link" href="#" (click)="pageChanged(data.current_page-1);$event.preventDefault();">{{ data.current_page-1 }}</a></li>
 
   <li class="page-item active"><a class="page-link" href="#" (click)="$event.preventDefault()">{{ data.current_page }}</a></li>
 
