@@ -2,7 +2,7 @@
   <div class="form-group page-per-page" *ngIf="data.select_per_page">
     <label>Per Page</label>
     <select class="form-control" name="per_page" (change)="perPageChanged($event.target.value)">
-      <option *ngFor="let pp of data.select_per_page_values" [value]="pp">{{ pp }}</option>
+      <option *ngFor="let pp of data.select_per_page_values" [value]="pp" [selected]="data.per_page==pp">{{ pp }}</option>
     </select>
   </div>
   <ul class="pagination justify-content-center align-items-center">

@@ -24,6 +24,10 @@ export class BsNgxPaginationComponent implements OnInit {
     if (this.data.select_per_page_values === undefined || this.data.select_per_page_values.length === 0) {
       this.data.select_per_page_values = [10, 20, 50, 100, 250];
     }
+    if (this.data.select_per_page_values.indexOf(this.data.per_page) === -1) {
+      this.data.select_per_page_values.push(+this.data.per_page);
+      this.data.select_per_page_values.sort((a, b) => a - b);
+    }
   }
   pageChanged(page: number) {
     if (page < 1) {

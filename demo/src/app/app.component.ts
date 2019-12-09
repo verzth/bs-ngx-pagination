@@ -11,7 +11,7 @@ export class AppComponent {
   data = {
     from: 1,
     to: 100,
-    per_page: 10,
+    per_page: 25,
     total: 1000,
     current_page: 1,
     last_page: 10,
