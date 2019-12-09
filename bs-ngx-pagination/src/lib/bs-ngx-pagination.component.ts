@@ -34,7 +34,7 @@ export class BsNgxPaginationComponent {
     if (this.dataValue.select_per_page_values === undefined || this.dataValue.select_per_page_values.length === 0) {
       this.dataValue.select_per_page_values = [10, 20, 50, 100, 250];
     }
-    if (this.dataValue.select_per_page_values.indexOf(this.dataValue.per_page) === -1) {
+    if (this.dataValue.select_per_page_values.indexOf(+this.dataValue.per_page) === -1) {
       this.dataValue.select_per_page_values.push(+this.dataValue.per_page);
       this.dataValue.select_per_page_values.sort((a, b) => a - b);
     }
