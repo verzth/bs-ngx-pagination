@@ -22,5 +22,13 @@ export class AppComponent {
   }
   public perPageChange(count) {
     console.log(count);
+    this.data = {
+      from: 1,
+      to: 100,
+      per_page: count,
+      total: 1000,
+      current_page: 1,
+      last_page: 10
+    } as Pagination;
   }
 }

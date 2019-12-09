@@ -33,11 +33,11 @@ npm i --save bs-ngx-pagination
 2. Use component **bs-ngx-pagination** to implement the module.
 3. Provide callback for action where page changed, just put
    the function in event binding **pageChange**, don't forget to add $event on first parameter.
-4. Provide json data list in **[data]** property binding.
+4. Provide json data list in **[(data)]** property/event binding (Two-way binding).
 
 Sample
    ```
-   <bs-ngx-pagination [data]="list" (pageChange)="pageChange($event)" (perPageChange)="perPageChange($event)"></bs-ngx-pagination>
+   <bs-ngx-pagination [(data)]="list" (pageChange)="pageChange($event)" (perPageChange)="perPageChange($event)"></bs-ngx-pagination>
    ```
 
 Bootstrap pagination for Angular v1.x available in this repository [Angular Laravel Pagination JS](https://github.com/verzth/angular-laravel-pagination.js)

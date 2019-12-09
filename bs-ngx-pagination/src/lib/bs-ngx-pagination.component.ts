@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import Pagination from './bs-ngx-pagination.interface';
 
 @Component({
@@ -8,37 +8,47 @@ import Pagination from './bs-ngx-pagination.interface';
     'bs-ngx-pagination.component.scss'
   ]
 })
-export class BsNgxPaginationComponent implements OnInit {
+export class BsNgxPaginationComponent {
   @Output() pageChange = new EventEmitter<number>();
   @Output() perPageChange = new EventEmitter<number>();
-  @Input() data: Pagination = {} as Pagination;
+  @Output() dataChange = new EventEmitter<number>();
+  dataValue: Pagination = {} as Pagination;
   constructor() {}
 
-  ngOnInit() {
-    if (this.data.select_per_page === undefined) {
-      this.data.select_per_page = true;
+  @Input()
+  get data() {
+    return this.data;
+  }
+  set data(val) {
+    this.dataValue = val;
+    this.normalizeData();
+    this.dataChange.emit(val);
+  }
+  private normalizeData() {
+    if (this.dataValue.select_per_page === undefined) {
+      this.dataValue.select_per_page = true;
     }
-    if (this.data.input_page === undefined) {
-      this.data.input_page = true;
+    if (this.dataValue.input_page === undefined) {
+      this.dataValue.input_page = true;
     }
-    if (this.data.select_per_page_values === undefined || this.data.select_per_page_values.length === 0) {
-      this.data.select_per_page_values = [10, 20, 50, 100, 250];
+    if (this.dataValue.select_per_page_values === undefined || this.dataValue.select_per_page_values.length === 0) {
+      this.dataValue.select_per_page_values = [10, 20, 50, 100, 250];
     }
-    if (this.data.select_per_page_values.indexOf(this.data.per_page) === -1) {
-      this.data.select_per_page_values.push(+this.data.per_page);
-      this.data.select_per_page_values.sort((a, b) => a - b);
+    if (this.dataValue.select_per_page_values.indexOf(this.dataValue.per_page) === -1) {
+      this.dataValue.select_per_page_values.push(+this.dataValue.per_page);
+      this.dataValue.select_per_page_values.sort((a, b) => a - b);
     }
   }
   pageChanged(page: number) {
     if (page < 1) {
       page = 1;
-    } else if (page > this.data.last_page) {
-      page = this.data.last_page;
+    } else if (page > this.dataValue.last_page) {
+      page = this.dataValue.last_page;
     }
     this.pageChange.emit(page);
   }
   perPageChanged(count: number) {
-    this.perPageChange.emit(count);
+    this.perPageChange.emit(+count);
   }
   inputPageChanged(e) {
     let page = +e.target.value;
@@ -46,13 +56,13 @@ export class BsNgxPaginationComponent implements OnInit {
       if (page < 1) {
         page = 1;
         e.target.value = page;
-      } else if (page > this.data.last_page) {
-        page = this.data.last_page;
+      } else if (page > this.dataValue.last_page) {
+        page = this.dataValue.last_page;
         e.target.value = page;
       }
       this.pageChange.emit(page);
     } else {
-      e.target.value = this.data.current_page;
+      e.target.value = this.dataValue.current_page;
     }
   }
 }
