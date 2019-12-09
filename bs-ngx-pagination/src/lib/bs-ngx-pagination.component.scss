@@ -1,0 +1,10 @@
+.page-container{
+  padding: 10px 20px 10px;
+  .page-input>label,.page-per-page>label{
+    font-size: 11px;
+  }
+  .page-input{
+    text-align: right;
+    max-width: 70px;
+  }
+}

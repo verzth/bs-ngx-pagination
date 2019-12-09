@@ -11,4 +11,7 @@ export default interface Pagination {
   last_page_url: string;
   path: string;
   data: any;
+  input_page: boolean;
+  select_per_page: boolean;
+  select_per_page_values: Array<number>;
 }

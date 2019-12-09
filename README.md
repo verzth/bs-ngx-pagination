@@ -37,7 +37,7 @@ npm i --save bs-ngx-pagination
 
 Sample
    ```
-   <bs-ngx-pagination [data]="list" (pageChange)="pageChange($event)"></bs-ngx-pagination>
+   <bs-ngx-pagination [data]="list" (pageChange)="pageChange($event)" (perPageChange)="perPageChange($event)"></bs-ngx-pagination>
    ```
 
 Bootstrap pagination for Angular v1.x available in this repository [Angular Laravel Pagination JS](https://github.com/verzth/angular-laravel-pagination.js)
