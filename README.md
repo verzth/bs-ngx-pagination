@@ -1,5 +1,5 @@
 # bs-ngx-pagination.js
-Javascript Library for Pagination which is compatible with Laravel pagination json data.
+Typescript Library for Angular 7 Pagination which is compatible with Laravel pagination json data with some additional.
 
 ### Dependencies
 - @angular/core
@@ -38,6 +38,27 @@ npm i --save bs-ngx-pagination
 Sample
    ```
    <bs-ngx-pagination [(data)]="list" (pageChange)="pageChange($event)" (perPageChange)="perPageChange($event)"></bs-ngx-pagination>
+   ```
+   
+#### Data Config Format:
+   ```
+    {
+        current_page: number,
+        first_page_url: string,
+        from: number,
+        last_page: number,
+        last_page_url: string,
+        next_page_url: string,
+        path: string,
+        per_page: number,
+        prev_page_url: string,
+        to: number,
+        total: number,
+        // Additional
+        select_per_page: boolean,
+        select_per_page_values: Array<number>,
+        input_page: boolean
+    }
    ```
 
 Bootstrap pagination for Angular v1.x available in this repository [Angular Laravel Pagination JS](https://github.com/verzth/angular-laravel-pagination.js)

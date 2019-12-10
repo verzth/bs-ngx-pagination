@@ -48,7 +48,9 @@ export class BsNgxPaginationComponent {
     this.pageChange.emit(page);
   }
   perPageChanged(count: number) {
-    this.perPageChange.emit(+count);
+    if (this.dataValue.per_page !== count) {
+      this.perPageChange.emit(+count);
+    }
   }
   inputPageChanged(e) {
     let page = +e.target.value;

@@ -103,7 +103,9 @@
          * @return {?}
          */
             function (count) {
-                this.perPageChange.emit(+count);
+                if (this.dataValue.per_page !== count) {
+                    this.perPageChange.emit(+count);
+                }
             };
         /**
          * @param {?} e
