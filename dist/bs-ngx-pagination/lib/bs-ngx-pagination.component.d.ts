@@ -5,6 +5,9 @@ export declare class BsNgxPaginationComponent {
     perPageChange: EventEmitter<number>;
     dataChange: EventEmitter<number>;
     dataValue: Pagination;
+    selectPerPage: boolean;
+    selectPerPageValues: Array<number>;
+    inputPage: boolean;
     constructor();
     data: any;
     private normalizeData;

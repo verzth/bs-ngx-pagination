@@ -37,7 +37,7 @@ npm i --save bs-ngx-pagination
 
 Sample
    ```
-   <bs-ngx-pagination [(data)]="list" (pageChange)="pageChange($event)" (perPageChange)="perPageChange($event)"></bs-ngx-pagination>
+   <bs-ngx-pagination [(data)]="list" (pageChange)="pageChange($event)" (perPageChange)="perPageChange($event)" [selectPerPage]="true|false" [selectPerPageValues]="[]" [inputPage]="true|false"></bs-ngx-pagination>
    ```
    
 #### Data Config Format:
@@ -53,11 +53,7 @@ Sample
         per_page: number,
         prev_page_url: string,
         to: number,
-        total: number,
-        // Additional
-        select_per_page: boolean,
-        select_per_page_values: Array<number>,
-        input_page: boolean
+        total: number
     }
    ```
 
