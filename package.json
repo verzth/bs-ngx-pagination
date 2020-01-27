@@ -1,6 +1,6 @@
 {
-  "name": "bs-ngx-pagination",
-  "version": "0.3.0",
+  "name": "@verzth/ngx-bootstrap-pagination",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

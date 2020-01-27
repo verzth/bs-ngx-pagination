@@ -1,4 +1,4 @@
-import { Injectable, Component, EventEmitter, Input, Output, NgModule, defineInjectable } from '@angular/core';
+import { Injectable, NgModule, Component, EventEmitter, Input, Output, defineInjectable } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 /**
@@ -179,4 +179,4 @@ var BsNgxPaginationModule = /** @class */ (function () {
 
 export { BsNgxPaginationService, BsNgxPaginationComponent, BsNgxPaginationModule };
 
-//# sourceMappingURL=bs-ngx-pagination.js.map
+//# sourceMappingURL=verzth-ngx-bootstrap-pagination.js.map

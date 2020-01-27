@@ -153,4 +153,4 @@ BsNgxPaginationModule.decorators = [
 
 export { BsNgxPaginationService, BsNgxPaginationComponent, BsNgxPaginationModule };
 
-//# sourceMappingURL=bs-ngx-pagination.js.map
+//# sourceMappingURL=verzth-ngx-bootstrap-pagination.js.map

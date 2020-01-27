@@ -1,6 +1,6 @@
 {
-  "name": "bs-ngx-pagination",
-  "version": "0.3.0",
+  "name": "@verzth/ngx-bootstrap-pagination",
+  "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^7.0.0",
     "@angular/core": "^7.0.0"
@@ -8,15 +8,15 @@
   "devDependencies": {
     "bootstrap": "^4.1.3"
   },
-  "main": "bundles/bs-ngx-pagination.umd.js",
-  "module": "fesm5/bs-ngx-pagination.js",
-  "es2015": "fesm2015/bs-ngx-pagination.js",
-  "esm5": "esm5/bs-ngx-pagination.js",
-  "esm2015": "esm2015/bs-ngx-pagination.js",
-  "fesm5": "fesm5/bs-ngx-pagination.js",
-  "fesm2015": "fesm2015/bs-ngx-pagination.js",
-  "typings": "bs-ngx-pagination.d.ts",
-  "metadata": "bs-ngx-pagination.metadata.json",
+  "main": "bundles/verzth-ngx-bootstrap-pagination.umd.js",
+  "module": "fesm5/verzth-ngx-bootstrap-pagination.js",
+  "es2015": "fesm2015/verzth-ngx-bootstrap-pagination.js",
+  "esm5": "esm5/verzth-ngx-bootstrap-pagination.js",
+  "esm2015": "esm2015/verzth-ngx-bootstrap-pagination.js",
+  "fesm5": "fesm5/verzth-ngx-bootstrap-pagination.js",
+  "fesm2015": "fesm2015/verzth-ngx-bootstrap-pagination.js",
+  "typings": "verzth-ngx-bootstrap-pagination.d.ts",
+  "metadata": "verzth-ngx-bootstrap-pagination.metadata.json",
   "sideEffects": false,
   "dependencies": {
     "tslib": "^1.9.0"

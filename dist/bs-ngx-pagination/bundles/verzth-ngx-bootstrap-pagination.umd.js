@@ -1,7 +1,7 @@
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/common')) :
-    typeof define === 'function' && define.amd ? define('bs-ngx-pagination', ['exports', '@angular/core', '@angular/common'], factory) :
-    (factory((global['bs-ngx-pagination'] = {}),global.ng.core,global.ng.common));
+    typeof define === 'function' && define.amd ? define('@verzth/ngx-bootstrap-pagination', ['exports', '@angular/core', '@angular/common'], factory) :
+    (factory((global.verzth = global.verzth || {}, global.verzth['ngx-bootstrap-pagination'] = {}),global.ng.core,global.ng.common));
 }(this, (function (exports,i0,common) { 'use strict';
 
     /**
@@ -185,4 +185,4 @@
 
 })));
 
-//# sourceMappingURL=bs-ngx-pagination.umd.js.map
+//# sourceMappingURL=verzth-ngx-bootstrap-pagination.umd.js.map

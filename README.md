@@ -1,18 +1,18 @@
-# bs-ngx-pagination.js
+# ngx-bootstrap-pagination
 Typescript Library for Angular 7 Pagination which is compatible with Laravel pagination json data with some additional.
 
 ### Dependencies
 - @angular/core
 - @angular/common
-- bootstrap
+- bootstrap 4
 
 ### Installation
 ```
-npm i bs-ngx-pagination
+npm i @verzth/ngx-bootstrap-pagination
 ```
 or
 ```
-npm i --save bs-ngx-pagination
+npm i --save @verzth/ngx-bootstrap-pagination
 ```
 
 ### How to Use:
@@ -56,5 +56,3 @@ Sample
         total: number
     }
    ```
-
-Bootstrap pagination for Angular v1.x available in this repository [Angular Laravel Pagination JS](https://github.com/verzth/angular-laravel-pagination.js)
