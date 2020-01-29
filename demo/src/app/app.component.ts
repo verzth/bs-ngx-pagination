@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import Pagination from '../../../bs-ngx-pagination/src/lib/bs-ngx-pagination.interface';
+import Pagination from '../../../ngx-bootstrap-pagination/src/lib/ngx-bootstrap-pagination.interface';
 
 @Component({
   selector: 'app-root',

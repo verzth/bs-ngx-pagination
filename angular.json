@@ -3,33 +3,33 @@
   "version": 1,
   "newProjectRoot": "",
   "projects": {
-    "bs-ngx-pagination": {
-      "root": "bs-ngx-pagination",
-      "sourceRoot": "bs-ngx-pagination/src",
+    "ngx-bootstrap-pagination": {
+      "root": "ngx-bootstrap-pagination",
+      "sourceRoot": "ngx-bootstrap-pagination/src",
       "projectType": "library",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "bs-ngx-pagination/tsconfig.lib.json",
-            "project": "bs-ngx-pagination/ng-package.json"
+            "tsConfig": "ngx-bootstrap-pagination/tsconfig.lib.json",
+            "project": "ngx-bootstrap-pagination/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "bs-ngx-pagination/src/test.ts",
-            "tsConfig": "bs-ngx-pagination/tsconfig.spec.json",
-            "karmaConfig": "bs-ngx-pagination/karma.conf.js"
+            "main": "ngx-bootstrap-pagination/src/test.ts",
+            "tsConfig": "ngx-bootstrap-pagination/tsconfig.spec.json",
+            "karmaConfig": "ngx-bootstrap-pagination/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "bs-ngx-pagination/tsconfig.lib.json",
-              "bs-ngx-pagination/tsconfig.spec.json"
+              "ngx-bootstrap-pagination/tsconfig.lib.json",
+              "ngx-bootstrap-pagination/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -166,5 +166,5 @@
       }
     }
   },
-  "defaultProject": "bs-ngx-pagination"
+  "defaultProject": "ngx-bootstrap-pagination"
 }

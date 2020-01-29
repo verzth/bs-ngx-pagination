@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {BsNgxPaginationModule} from '../../../bs-ngx-pagination/src/lib/bs-ngx-pagination.module';
+import {NgxBootstrapPaginationModule} from '../../../ngx-bootstrap-pagination/src/lib/ngx-bootstrap-pagination.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,7 @@ import {BsNgxPaginationModule} from '../../../bs-ngx-pagination/src/lib/bs-ngx-p
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BsNgxPaginationModule
+    NgxBootstrapPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

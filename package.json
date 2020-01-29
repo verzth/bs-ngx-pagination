@@ -1,6 +1,6 @@
 {
   "name": "@verzth/ngx-bootstrap-pagination",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,26 +9,44 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/verzth/ngx-bootstrap-pagination.git"
+  },
+  "keywords": [
+    "pagination",
+    "bootstrap",
+    "bootstrap pagination",
+    "angular pagination",
+    "bs-ngx-pagination",
+    "ngx-pagination"
+  ],
+  "author": "Dodi Triwibowo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/verzth/ngx-bootstrap-pagination/issues"
+  },
+  "homepage": "https://github.com/verzth/ngx-bootstrap-pagination#readme",
   "dependencies": {
-    "@angular/animations": "^7.2.15",
-    "@angular/common": "^7.2.15",
-    "@angular/compiler": "^7.2.15",
-    "@angular/core": "^7.2.15",
-    "@angular/forms": "^7.2.15",
-    "@angular/http": "^7.2.15",
-    "@angular/platform-browser": "^7.2.15",
-    "@angular/platform-browser-dynamic": "^7.2.15",
-    "@angular/router": "^7.2.15",
+    "@angular/animations": "^7.2.16",
+    "@angular/common": "^7.2.16",
+    "@angular/compiler": "^7.2.16",
+    "@angular/core": "^7.2.16",
+    "@angular/forms": "^7.2.16",
+    "@angular/http": "^7.2.16",
+    "@angular/platform-browser": "^7.2.16",
+    "@angular/platform-browser-dynamic": "^7.2.16",
+    "@angular/router": "^7.2.16",
     "core-js": "^2.6.11",
     "rxjs": "~6.3.3",
     "zone.js": "^0.8.29"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.12.1",
+    "@angular-devkit/build-angular": "^0.803.23",
     "@angular-devkit/build-ng-packagr": "^0.12.1",
     "@angular/cli": "^7.3.9",
-    "@angular/compiler-cli": "^7.2.15",
-    "@angular/language-service": "^7.2.15",
+    "@angular/compiler-cli": "^7.2.16",
+    "@angular/language-service": "^7.2.16",
     "@types/jasmine": "^2.8.16",
     "@types/jasminewd2": "^2.0.8",
     "@types/node": "~8.9.4",
@@ -42,7 +60,7 @@
     "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
     "ng-packagr": "^4.7.1",
-    "protractor": "^5.4.2",
+    "protractor": "^5.4.3",
     "ts-node": "~7.0.0",
     "tsickle": "^0.34.3",
     "tslib": "^1.10.0",

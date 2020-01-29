@@ -1,0 +1,11 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/*
+ * Public API Surface of bs-ng-pagination
+ */
+export { NgxBootstrapPaginationService } from './lib/ngx-bootstrap-pagination.service';
+export { NgxBootstrapPaginationComponent } from './lib/ngx-bootstrap-pagination.component';
+export { NgxBootstrapPaginationModule } from './lib/ngx-bootstrap-pagination.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljX2FwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL0B2ZXJ6dGgvbmd4LWJvb3RzdHJhcC1wYWdpbmF0aW9uLyIsInNvdXJjZXMiOlsicHVibGljX2FwaS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7O0FBSUEsOENBQWMsd0NBQXdDLENBQUM7QUFDdkQsZ0RBQWMsMENBQTBDLENBQUM7QUFDekQsNkNBQWMsdUNBQXVDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuICogUHVibGljIEFQSSBTdXJmYWNlIG9mIGJzLW5nLXBhZ2luYXRpb25cbiAqL1xuXG5leHBvcnQgKiBmcm9tICcuL2xpYi9uZ3gtYm9vdHN0cmFwLXBhZ2luYXRpb24uc2VydmljZSc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9uZ3gtYm9vdHN0cmFwLXBhZ2luYXRpb24uY29tcG9uZW50JztcbmV4cG9ydCAqIGZyb20gJy4vbGliL25neC1ib290c3RyYXAtcGFnaW5hdGlvbi5tb2R1bGUnO1xuIl19

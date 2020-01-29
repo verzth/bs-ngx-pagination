@@ -16,13 +16,13 @@ npm i --save @verzth/ngx-bootstrap-pagination
 ```
 
 ### How to Use:
-1. Add **BsNgxPaginationModule** in your app module imports.
+1. Add **NgxBootstrapPaginationModule** in your app module imports.
    ```
    @NgModule({
    .....
     imports: [
       ...
-      BsNgxPaginationModule
+      NgxBootstrapPaginationModule
       ...
     ]
    .....
@@ -30,14 +30,14 @@ npm i --save @verzth/ngx-bootstrap-pagination
    export class YourModule {}
    ```
 
-2. Use component **bs-ngx-pagination** to implement the module.
+2. Use component **ngx-bootstrap-pagination** to implement the module.
 3. Provide callback for action where page changed, just put
    the function in event binding **pageChange**, don't forget to add $event on first parameter.
 4. Provide json data list in **[(data)]** property/event binding (Two-way binding).
 
 Sample
    ```
-   <bs-ngx-pagination [(data)]="list" (pageChange)="pageChange($event)" (perPageChange)="perPageChange($event)" [selectPerPage]="true|false" [selectPerPageValues]="[]" [inputPage]="true|false"></bs-ngx-pagination>
+   <ngx-bootstrap-pagination [(data)]="list" (pageChange)="pageChange($event)" (perPageChange)="perPageChange($event)" [selectPerPage]="true|false" [selectPerPageValues]="[]" [inputPage]="true|false"></ngx-bootstrap-pagination>
    ```
    
 #### Data Config Format:
